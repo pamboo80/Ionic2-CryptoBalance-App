@@ -6,7 +6,7 @@ A user can select their preferred fiat currency for conversions. Users can also 
 
 # Technologies Used:
 # Front end:
-Software & Libraries - Ionic Framework (Android & iOS), Typescript, RxJS, SQLLite IDE: Webstrom, Android Studio & XCode
+Software & Libraries - Ionic 2.0 Framework (Android & iOS), Typescript, RxJS, SQLLite IDE: Webstrom, Android Studio & XCode
 # Architecture: 
 MVP
 # Middleware: 
