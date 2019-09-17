@@ -1,0 +1,66 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "C:\\nikul\\Ionic\\CryptoBalance\\cordova-plugin-myapp",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "C:\\nikul\\Ionic\\CryptoBalance\\cordova-plugin-myapp",
+        "spec": "C:\\nikul\\Ionic\\CryptoBalance\\cordova-plugin-myapp",
+        "type": "directory"
+      },
+      "C:\\nikul\\Ionic\\CryptoBalance\\node_modules"
+    ]
+  ],
+  "_from": "cordova-plugin-myapp",
+  "_id": "cordova-plugin-myapp@0.0.1",
+  "_inCache": true,
+  "_location": "/cordova-plugin-myapp",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "C:\\nikul\\Ionic\\CryptoBalance\\cordova-plugin-myapp",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "C:\\nikul\\Ionic\\CryptoBalance\\cordova-plugin-myapp",
+    "spec": "C:\\nikul\\Ionic\\CryptoBalance\\cordova-plugin-myapp",
+    "type": "directory"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "file:cordova-plugin-myapp",
+  "_shasum": "514b410f1db60f6285e03fc7e0e7da3c6026c394",
+  "_shrinkwrap": null,
+  "_spec": "C:\\nikul\\Ionic\\CryptoBalance\\cordova-plugin-myapp",
+  "_where": "C:\\nikul\\Ionic\\CryptoBalance\\node_modules",
+  "author": {
+    "name": "BangBit"
+  },
+  "cordova": {
+    "id": "cordova-plugin-myapp",
+    "platforms": [
+      "android"
+    ]
+  },
+  "dependencies": {},
+  "description": "Plugin to access the Android native code. Available for Android ONLY..",
+  "devDependencies": {},
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "keywords": [
+    "cordova",
+    "phonegap"
+  ],
+  "license": "Apache 2.0",
+  "name": "cordova-plugin-myapp",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "version": "0.0.1"
+}

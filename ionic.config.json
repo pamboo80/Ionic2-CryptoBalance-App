@@ -1,0 +1,7 @@
+{
+  "name": "CryptoBalance",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

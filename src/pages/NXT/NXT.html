@@ -1,0 +1,63 @@
+<ion-header no-border>
+  <ion-navbar color="bangbit">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-10="">
+          <!--<ion-title>About</ion-title>-->
+          <div class="title app-font">CryptoBalance</div>
+        </ion-col>
+        <ion-col col-2="">
+          <ion-buttons end="" (click)="presentPopover($event)">
+            <button icon-only style="background-color: transparent">
+              <ion-icon name="more" style="color: white; margin-top: 4px"></ion-icon>
+            </button>
+          </ion-buttons>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-navbar>
+  <my-app-toolbar #childComponentToolbar coin-type="NXT" (onAddWalletAddress)="addItemToAddressesArray($event)" (onCoinValueChange)="onChangeCoinValue($event)" (onCurrencyTypeChange)="onChangeCurrencyType($event)"></my-app-toolbar>
+</ion-header>
+
+<ion-content padding-bottom="1">
+
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+      pullingIcon="arrow-dropdown"
+      pullingText="Pull To Refresh"
+      refreshingSpinner="circles">
+    </ion-refresher-content>
+  </ion-refresher>
+
+  <div *ngIf="myNXTWallets.length>0">
+    <ion-list>
+      <ion-item-sliding *ngFor="let myNXTWalletsiterator of myNXTWallets; let i = index;"> <!-- let last=last-->
+        <ion-item (click)="walletDetails(myNXTWallets.indexOf(myNXTWalletsiterator))" detail-push="">
+          <h6 style="font-weight: bold;text-overflow: ellipsis;overflow: hidden;">{{i+1}}. {{myNXTWalletsiterator.address}}</h6> <!--{{i+1}}.-->
+          <h6>Wallet Name : {{myNXTWalletsiterator.walletName}}</h6>         
+          <h6>Balance : {{(myNXTWalletsiterator.balance ==0 )?"0.0": myNXTWalletsiterator.balance }}</h6>
+          <h6>Value&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: {{ (myNXTWalletsiterator.balance * todayCoinValue ==0 )?"0.0": myNXTWalletsiterator.balance * todayCoinValue |customNumber}}</h6>
+          <!--{{last ? lastItemAdded(myNXTWalletsiterator.balance) : ''}}-->
+        </ion-item>
+        <ion-item-options side="right">
+          <button ion-button color="danger" (click)="deleteItemAtIndex(myNXTWallets.indexOf(myNXTWalletsiterator))">
+            <ion-icon name="trash"></ion-icon>
+            Delete
+          </button>
+        </ion-item-options>
+      </ion-item-sliding>
+    </ion-list>
+  </div>
+  <div *ngIf="myNXTWallets.length==0">
+    <ion-item  no-lines="" text-center="">
+      <h6>No addresses added.</h6>
+    </ion-item>
+  </div>
+
+</ion-content>
+<ion-footer no-border>
+  <hr style="margin-bottom:1px"/>
+  <ion-item  no-lines="" text-center="" >
+    <h6 style="font-weight: bold">Total : {{totalBalance}} NXT ( ~ {{currencySymbol}}{{totalBalanceValue}} )</h6>
+  </ion-item>
+</ion-footer>

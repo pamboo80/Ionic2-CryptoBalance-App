@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-myapp"
+        version="0.0.1">
+    <name>My App Plugin</name>
+    <description>Plugin to access the Android native code.
+        Available for Android ONLY.
+    </description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,phonegap</keywords>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+
+    <js-module src="www/myappplugin.js" name="myAppPlugin">
+        <clobbers target="myAppPlugin"/>
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="MyAppPlugin">
+                <param name="android-package" value="in.BangBit.CryptoBalance.MyAppPlugin"/>
+            </feature>
+        </config-file>
+
+      <!--
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+            <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+        </config-file>
+
+        <framework src="com.android.support:appcompat-v7:25.2.0" />
+       -->
+
+       <source-file src="src/android/in/BangBit/CryptoBalance/MyAppPlugin.java"
+                     target-dir="src/in/BangBit/CryptoBalance"/>
+
+    </platform>
+</plugin>

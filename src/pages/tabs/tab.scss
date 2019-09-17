@@ -1,0 +1,444 @@
+page-tabs {
+  /*information-circle is used as bitcoin icon*/
+  .ion-md-information-circle:before {
+    content: url('../assets/icon/bitcoin-icon.svg') !important;
+  }
+  .ion-ios-information-circle:before {
+    content: url('../assets/icon/bitcoin-icon.svg') !important;
+  }
+  .ion-ios-information-circle-outline:before {
+    content: url('../assets/icon/bitcoin-icon.svg') !important;
+  }
+
+  /*bicycle is used as lite icon*/
+  .ion-ios-bicycle:before {
+    content: url('../assets/icon/ltccoin-icon.svg') !important;
+  }
+  .ion-ios-bicycle-outline:before {
+    content: url('../assets/icon/ltccoin-icon.svg') !important;
+  }
+  .ion-md-bicycle:before {
+    content: url('../assets/icon/ltccoin-icon.svg') !important;
+  }
+
+  /*bluetooth is used as etc icon*/
+  .ion-ios-bluetooth:before {
+    content: url('../assets/icon/etccoin-icon.svg') !important;
+  }
+  .ion-ios-bluetooth-outline:before {
+    content: url('../assets/icon/etccoin-icon.svg') !important;
+  }
+  .ion-md-bluetooth:before {
+    content: url('../assets/icon/etccoin-icon.svg') !important;
+  }
+
+  /*boat is used as eth icon*/
+  .ion-ios-boat:before {
+    content: url('../assets/icon/ethcoin-icon.svg') !important;
+  }
+  .ion-ios-boat-outline:before {
+    content: url('../assets/icon/ethcoin-icon.svg') !important;
+  }
+  .ion-md-boat:before {
+    content: url('../assets/icon/ethcoin-icon.svg') !important;
+  }
+
+  /*bonefire is used as xrp icon*/
+  .ion-ios-bonfire:before {
+    content: url('../assets/icon/XRP.svg') !important;
+  }
+  .ion-ios-bonfire-outline:before {
+    content: url('../assets/icon/XRP.svg') !important;
+  }
+  .ion-md-bonfire:before {
+    content: url('../assets/icon/XRP.svg') !important;
+  }
+  /*bowtie is used as bts icon*/
+  .ion-ios-bowtie:before {
+    content: url('../assets/icon/BTS.svg') !important;
+  }
+  .ion-ios-bowtie-outline:before {
+    content: url('../assets/icon/BTS.svg') !important;
+  }
+  .ion-md-bowtie:before {
+    content: url('../assets/icon/BTS.svg') !important;
+  }
+  /*album is used as BCH icon*/
+  .ion-ios-album:before {
+    content: url('../assets/icon/BCH.svg') !important;
+  }
+  .ion-ios-album-outline:before {
+    content: url('../assets/icon/BCH.svg') !important;
+  }
+  .ion-md-album:before {
+    content: url('../assets/icon/BCH.svg') !important;
+  }
+  /*analytics is used as BLK icon*/
+  .ion-ios-analytics:before {
+    content: url('../assets/icon/BLK.svg') !important;
+  }
+  .ion-ios-analytics-outline:before {
+    content: url('../assets/icon/BLK.svg') !important;
+  }
+  .ion-md-analytics:before {
+    content: url('../assets/icon/BLK.svg') !important;
+  }
+
+  /*aperture is used as DASH icon*/
+  .ion-ios-aperture:before {
+    content: url('../assets/icon/DASH.svg') !important;
+  }
+  .ion-ios-aperture-outline:before {
+    content: url('../assets/icon/DASH.svg') !important;
+  }
+  .ion-md-aperture:before {
+    content: url('../assets/icon/DASH.svg') !important;
+  }
+  /*archive is used as DOGE icon*/
+  .ion-ios-archive:before {
+    content: url('../assets/icon/DOGE.svg') !important;
+  }
+  .ion-ios-archive-outline:before {
+    content: url('../assets/icon/DOGE.svg') !important;
+  }
+  .ion-md-archive:before {
+    content: url('../assets/icon/DOGE.svg') !important;
+  }
+
+  /*at is used as GNO icon*/
+  .ion-ios-at:before {
+    content: url('../assets/icon/GNO.svg') !important;
+  }
+  .ion-ios-at-outline:before {
+    content: url('../assets/icon/GNO.svg') !important;
+  }
+  .ion-md-at:before {
+    content: url('../assets/icon/GNO.svg') !important;
+  }
+
+  /*attach is used as GNT icon*/
+  .ion-ios-attach:before {
+    content: url('../assets/icon/GNT.svg') !important;
+  }
+  .ion-ios-attach-outline:before {
+    content: url('../assets/icon/GNT.svg') !important;
+  }
+  .ion-md-attach:before {
+    content: url('../assets/icon/GNT.svg') !important;
+  }
+
+  /*basket is used as IOTA icon*/
+  .ion-ios-basket:before {
+    content: url('../assets/icon/IOTA.svg') !important;
+  }
+  .ion-ios-basket-outline:before {
+    content: url('../assets/icon/IOTA.svg') !important;
+  }
+  .ion-md-basket:before {
+    content: url('../assets/icon/IOTA.svg') !important;
+  }
+
+  /*beaker is used as LSK icon*/
+  .ion-ios-beaker:before {
+    content: url('../assets/icon/LSK.svg') !important;
+  }
+  .ion-ios-beaker-outline:before {
+    content: url('../assets/icon/LSK.svg') !important;
+  }
+  .ion-md-beaker:before {
+    content: url('../assets/icon/LSK.svg') !important;
+  }
+
+  /*beer is used as NEO icon*/
+  .ion-ios-beer:before {
+    content: url('../assets/icon/NEO.svg') !important;
+  }
+  .ion-ios-beer-outline:before {
+    content: url('../assets/icon/NEO.svg') !important;
+  }
+  .ion-md-beer:before {
+    content: url('../assets/icon/NEO.svg') !important;
+  }
+
+  /*body is used as NXT icon*/
+  .ion-ios-body:before {
+    content: url('../assets/icon/NXT.svg') !important;
+  }
+  .ion-ios-body-outline:before {
+    content: url('../assets/icon/NXT.svg') !important;
+  }
+  .ion-md-body:before {
+    content: url('../assets/icon/NXT.svg') !important;
+  }
+
+  /*brush is used as PPC icon*/
+  .ion-ios-brush:before {
+    content: url('../assets/icon/PPC.svg') !important;
+  }
+  .ion-ios-brush-outline:before {
+    content: url('../assets/icon/PPC.svg') !important;
+  }
+  .ion-md-brush:before {
+    content: url('../assets/icon/PPC.svg') !important;
+  }
+
+  /*bug is used as STEEM icon*/
+  .ion-ios-bug:before {
+    content: url('../assets/icon/STEEM.svg') !important;
+  }
+  .ion-ios-bug-outline:before {
+    content: url('../assets/icon/STEEM.svg') !important;
+  }
+  .ion-md-bug:before {
+    content: url('../assets/icon/STEEM.svg') !important;
+  }
+
+  /*build is used as XEM icon*/
+  .ion-ios-build:before {
+    content: url('../assets/icon/XEM.svg') !important;
+  }
+  .ion-ios-build-outline:before {
+    content: url('../assets/icon/XEM.svg') !important;
+  }
+  .ion-md-build:before {
+    content: url('../assets/icon/XEM.svg') !important;
+  }
+
+  /*bus is used as BCH icon*/
+  .ion-ios-bus:before {
+    content: url('../assets/icon/BCH.svg') !important;
+  }
+  .ion-ios-bus-outline:before {
+    content: url('../assets/icon/BCH.svg') !important;
+  }
+  .ion-md-bus:before {
+    content: url('../assets/icon/BCH.svg') !important;
+  }
+
+  /*cafe is used as GNO icon*/
+  .ion-ios-cafe:before {
+    content: url('../assets/icon/GNO.svg') !important;
+  }
+  .ion-ios-cafe-outline:before {
+    content: url('../assets/icon/GNO.svg') !important;
+  }
+  .ion-md-cafe:before {
+    content: url('../assets/icon/GNO.svg') !important;
+  }
+
+  /*car is used as GNT icon*/
+  .ion-ios-car:before {
+    content: url('../assets/icon/GNT.svg') !important;
+  }
+  .ion-ios-car-outline:before {
+    content: url('../assets/icon/GNT.svg') !important;
+  }
+  .ion-md-car:before {
+    content: url('../assets/icon/GNT.svg') !important;
+  }
+
+  /*cloude is used as IOTA icon*/
+  .ion-ios-cloude:before {
+    content: url('../assets/icon/IOTA.svg') !important;
+  }
+  .ion-ios-cloude-outline:before {
+    content: url('../assets/icon/IOTA.svg') !important;
+  }
+  .ion-md-cloude:before {
+    content: url('../assets/icon/IOTA.svg') !important;
+  }
+  /*code is used as LSK icon*/
+  .ion-ios-code:before {
+    content: url('../assets/icon/LSK.svg') !important;
+  }
+  .ion-ios-code-outline:before {
+    content: url('../assets/icon/LSK.svg') !important;
+  }
+  .ion-md-code:before {
+    content: url('../assets/icon/LSK.svg') !important;
+  }
+
+  /*cog is used as NEO icon*/
+  .ion-ios-cog:before {
+    content: url('../assets/icon/NEO.svg') !important;
+  }
+  .ion-ios-cog-outline:before {
+    content: url('../assets/icon/NEO.svg') !important;
+  }
+  .ion-md-cog:before {
+    content: url('../assets/icon/NEO.svg') !important;
+  }
+
+  /*compass is used as STEEM icon*/
+  .ion-ios-compass:before {
+    content: url('../assets/icon/STEEM.svg') !important;
+  }
+  .ion-ios-compass-outline:before {
+    content: url('../assets/icon/STEEM.svg') !important;
+  }
+  .ion-md-compass:before {
+    content: url('../assets/icon/STEEM.svg') !important;
+  }
+
+
+  /*beer is used as XLM icon*/
+  .ion-ios-beer:before {
+    content: url('../assets/icon/XLM.svg') !important;
+  }
+  .ion-ios-beer-outline:before {
+    content: url('../assets/icon/XLM.svg') !important;
+  }
+  .ion-md-beer:before {
+    content: url('../assets/icon/XLM.svg') !important;
+  }
+
+
+  /*brush is used as ADA icon*/
+  .ion-ios-call:before {
+    content: url('../assets/icon/ADA.svg') !important;
+  }
+  .ion-ios-call-outline:before {
+    content: url('../assets/icon/ADA.svg') !important;
+  }
+  .ion-md-call:before {
+    content: url('../assets/icon/ADA.svg') !important;
+  }
+
+  /*build is used as WAVES icon*/
+  .ion-ios-car:before {
+    content: url('../assets/icon/WAVES.svg') !important;
+  }
+  .ion-ios-car-outline:before {
+    content: url('../assets/icon/WAVES.svg') !important;
+  }
+  .ion-md-car:before {
+    content: url('../assets/icon/WAVES.svg') !important;
+  }
+
+
+
+  /*bulb is used as DGB icon*/
+  .ion-ios-bulb:before {
+    content: url('../assets/icon/DGB.svg') !important;
+  }
+  .ion-ios-bulb-outline:before {
+    content: url('../assets/icon/DGB.svg') !important;
+  }
+  .ion-md-bulb:before {
+    content: url('../assets/icon/DGB.svg') !important;
+  }
+
+  /*card is used as DCR icon*/
+  .ion-ios-card:before {
+    content: url('../assets/icon/DCR.svg') !important;
+  }
+  .ion-ios-card-outline:before {
+    content: url('../assets/icon/DCR.svg') !important;
+  }
+  .ion-md-card:before {
+    content: url('../assets/icon/DCR.svg') !important;
+  }
+
+
+  /*brush is used as XVG icon*/
+  .ion-ios-construct:before {
+    content: url('../assets/icon/XVG.svg') !important;
+  }
+  .ion-ios-construct-outline:before {
+    content: url('../assets/icon/XVG.svg') !important;
+  }
+  .ion-md-construct:before {
+    content: url('../assets/icon/XVG.svg') !important;
+  }
+
+
+  /*contract is used as COLX icon*/
+  .ion-ios-contract:before {
+    content: url('../assets/icon/COLX.svg') !important;
+  }
+  .ion-ios-contract-outline:before {
+    content: url('../assets/icon/COLX.svg') !important;
+  }
+  .ion-md-contract:before {
+    content: url('../assets/icon/COLX.svg') !important;
+  }
+
+
+  /*desktop is used as PIVX icon*/
+  .ion-ios-desktop:before {
+    content: url('../assets/icon/PIVX.svg') !important;
+  }
+  .ion-ios-desktop-outline:before {
+    content: url('../assets/icon/PIVX.svg') !important;
+  }
+  .ion-md-desktop:before {
+    content: url('../assets/icon/PIVX.svg') !important;
+  }
+
+
+  /*disc is used as XDN icon*/
+  .ion-ios-disc:before {
+    content: url('../assets/icon/XDN.svg') !important;
+  }
+  .ion-ios-disc-outline:before {
+    content: url('../assets/icon/XDN.svg') !important;
+  }
+  .ion-md-disc:before {
+    content: url('../assets/icon/XDN.svg') !important;
+  }
+
+
+  /*easel is used as SIA icon*/
+  .ion-ios-easel:before {
+    content: url('../assets/icon/SIA.svg') !important;
+  }
+  .ion-ios-easel-outline:before {
+    content: url('../assets/icon/SIA.svg') !important;
+  }
+  .ion-md-easel:before {
+    content: url('../assets/icon/SIA.svg') !important;
+  }
+
+
+  /*egg is used as ZEC icon*/
+  .ion-ios-egg:before {
+    content: url('../assets/icon/ZEC.svg') !important;
+  }
+  .ion-ios-egg-outline:before {
+    content: url('../assets/icon/ZEC.svg') !important;
+  }
+  .ion-md-egg:before {
+    content: url('../assets/icon/ZEC.svg') !important;
+  }
+
+
+  a[aria-selected="true"]{
+    background: #d4dfe6!important;
+    min-width: 22%;
+  }
+  a[aria-selected="false"]{
+    min-width: 22%;
+  }
+
+  //Commented for next release. //@@@
+  /*
+  .tabs-md, .tabbar {
+    overflow-x: scroll;
+  }
+  */
+
+  .tabs-ios .tab-button-icon {
+     height: 32px!important;
+     margin-top: 2px!important;
+  }
+
+  /*  .tabbar{
+    padding-left: 20px;
+  }*/
+
+  /*.ng-animate .scroll-bar {
+    visibility: visible !important;
+  }
+  */
+}
+

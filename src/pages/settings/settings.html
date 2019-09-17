@@ -1,0 +1,53 @@
+<!--
+  Generated template for the SettingPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="bangbit" hideBackButton="true"> <!--id="navBar" #navBar-->
+    <ion-buttons left>
+      <button (click)="dismissPage()" class="back-button disable-hover bar-button bar-button-md back-button-md bar-button-default bar-button-default-md show-back-button" ion-button="bar-button"><span class="button-inner"><ion-icon class="back-button-icon icon icon-md back-button-icon-md ion-md-arrow-back" role="img" aria-label="arrow back"></ion-icon><span class="back-button-text back-button-text-md"></span></span><div class="button-effect"></div></button>
+    </ion-buttons>
+    <div class="title app-font">Settings</div>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding >
+
+  <!--  <ion-row>
+        <ion-checkbox ></ion-checkbox>
+        <ion-label>
+         Notify me on any balance values changes:
+        </ion-label>
+    </ion-row>-->
+
+  <ion-item detail-push="" tappable="" text-wrap="break-wrap"  (click)="openSelectFiatCurrencies()">
+    <div style="font-size: 16px">Fiat Currencies</div>
+    <div style="font-size: 12px;">(Select max of 6 currencies for conversion)</div>
+  </ion-item>
+
+  <!--<ion-item detail-push="" tappable="" text-wrap="break-wrap" (click)="openSelectCryptoCurrencies()">-->
+    <!--<div>Crypto Currencies</div>-->
+    <!--<div style="font-size: 12px;overflow: visible">Select crypto currencies that you want to display on Home page.</div>-->
+  <!--</ion-item>-->
+
+  <ion-item no-lines="" padding-top="">
+    <ion-label style="padding-left:10px; white-space: normal;">
+      <div>Notify me on my wallets balance value changes</div>
+    </ion-label>
+    <ion-checkbox style="margin: 0px!important;" (ionChange)="checkboxIsChecked($event)" [(ngModel)]="isChecked"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <div><ion-icon name="mail"></ion-icon></div>
+    <ion-input #emailAddress  placeholder="Email Address" type="text" [(ngModel)]="email" [disabled]="!isChecked" (ionChange)='changeEmail($event)'></ion-input>
+  </ion-item>
+
+  <!--<ion-item tappable="">-->
+  <button ion-button primary class="login-button" (click)="saveEmail()" [disabled]="!isChecked">{{saveButtonText}}</button>
+  <!--</ion-item>-->
+
+</ion-content>

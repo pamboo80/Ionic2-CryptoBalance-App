@@ -1,0 +1,64 @@
+<ion-header no-border>
+  <!--<ion-navbar color="bangbit">
+    <ion-title>Crypto Balance</ion-title>
+  </ion-navbar>-->
+  <ion-navbar color="bangbit">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-10="">
+          <!--<ion-title>About</ion-title>-->
+          <div class="title app-font">CryptoBalance</div>
+        </ion-col>
+        <ion-col col-2="">
+          <ion-buttons end="" (click)="presentPopover($event)">
+            <button icon-only style="background-color: transparent">
+              <ion-icon name="more" style="color: white; margin-top: 4px"></ion-icon>
+            </button>
+          </ion-buttons>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-navbar>
+  <my-app-toolbar #childComponentToolbar  coin-type="XVG" (onAddWalletAddress)="addItemToAddressesArray($event)" (onCoinValueChange)="onChangeCoinValue($event)" (onCurrencyTypeChange)="onChangeCurrencyType($event)"></my-app-toolbar>
+</ion-header>
+
+<ion-content padding-bottom="1">
+
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+      pullingIcon="arrow-dropdown"
+      pullingText="Pull To Refresh"
+      refreshingSpinner="circles">
+    </ion-refresher-content>
+  </ion-refresher>
+
+  <div *ngIf="myXVGWallets.length>0">
+  <ion-list>
+    <ion-item-sliding *ngFor="let myXVGWalletsiterator of myXVGWallets;let i = index;">
+    <ion-item  (click)="walletDetails(myXVGWallets.indexOf(myXVGWalletsiterator))" detail-push="" tappable>
+      <h6 style="font-weight: bold;text-overflow: ellipsis;overflow: hidden;">{{i+1}}. {{myXVGWalletsiterator.address}}</h6>
+      <h6>Wallet Name : {{myXVGWalletsiterator.walletName}}</h6>
+      <h6>Balance : {{(myXVGWalletsiterator.balance ==0 )?"0.0": myXVGWalletsiterator.balance }}</h6>
+      <h6>Value&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: {{currencySymbol}}{{ (myXVGWalletsiterator.balance * todayCoinValue ==0 )?"0.0": myXVGWalletsiterator.balance * todayCoinValue |customNumber}}</h6>
+    </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="danger" (click)="deleteItemAtIndex(myXVGWallets.indexOf(myXVGWalletsiterator))">
+          <ion-icon name="trash"></ion-icon>
+          Delete
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+  </div>
+  <div *ngIf="myXVGWallets.length==0">
+    <ion-item  no-lines="" text-center="">
+      <h6>No addresses added.</h6>
+    </ion-item>
+  </div>
+</ion-content>
+<ion-footer no-border>
+  <hr style="margin-bottom:1px"/>
+  <ion-item  no-lines="" text-center="" >
+    <h6 style="font-weight: bold">Total : {{totalBalance}} XVG ( ~ {{currencySymbol}}{{totalBalanceValue}} )</h6>
+  </ion-item>
+</ion-footer>

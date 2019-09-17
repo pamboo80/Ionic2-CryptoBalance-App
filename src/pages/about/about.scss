@@ -1,0 +1,22 @@
+page-about {
+  ion-img {
+   background: #ffffff!important;
+  }
+
+  a{
+    outline:none !important;
+    text-decoration: none !important;
+    /*color: #428bca;!important;*/
+  };
+
+}
+
+.item-radio-checked.item-md ion-label {
+  color:#537485!important;
+}
+.radio-md .radio-checked {
+  border-color: #537485!important;
+}
+.radio-md .radio-inner {
+  background-color: #537485!important;
+}

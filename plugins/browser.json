@@ -1,0 +1,54 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-clipboard": {
+            "PACKAGE_NAME": "in.BangBit.CryptoBalance"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "in.BangBit.CryptoBalance"
+        },
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "in.BangBit.CryptoBalance"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "in.BangBit.CryptoBalance"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "in.BangBit.CryptoBalance"
+        },
+        "cordova-plugin-myapp": {
+            "PACKAGE_NAME": "in.BangBit.CryptoBalance"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "in.BangBit.CryptoBalance"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "in.BangBit.CryptoBalance"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "in.BangBit.CryptoBalance"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "in.BangBit.CryptoBalance"
+        },
+        "cordova-sqlite-storage": {
+            "PACKAGE_NAME": "in.BangBit.CryptoBalance"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "in.BangBit.CryptoBalance"
+        },
+        "phonegap-plugin-barcodescanner": {
+            "PACKAGE_NAME": "in.BangBit.CryptoBalance"
+        },
+        "phonegap-plugin-push": {
+            "PACKAGE_NAME": "in.BangBit.CryptoBalance"
+        }
+    },
+    "dependent_plugins": {}
+}

@@ -1,0 +1,91 @@
+<!--
+  Generated template for the ExchangePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+
+  <ion-navbar color="bangbit">
+    <div class="title app-font">Crypto &#8644; Fiat</div>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content style="overflow-y: hidden;">
+<ion-card>
+    <ion-row>
+      <ion-col padding-left="">
+        <ion-label><div>Crypto Currency</div></ion-label>
+      </ion-col>
+      <ion-col>
+        <ion-select [(ngModel)]="coinType" interface="popover" (click)="onClick()" (ionChange)="getCurrency()">
+          <ion-option value="BTC" selected="true">BTC</ion-option>
+          <ion-option value="ETC">ETC</ion-option>
+          <ion-option value="ETH">ETH</ion-option>
+          <ion-option value="LTC">LTC</ion-option>
+          <ion-option value="BCH">BCH</ion-option>
+          <ion-option value="XLM">XLM</ion-option>
+          <ion-option value="BTS">BTS</ion-option>
+          <ion-option value="DASH">DASH</ion-option>
+          <ion-option value="DOGE">DOGE</ion-option>
+          <ion-option value="IOTA">IOTA</ion-option>
+          <ion-option value="LSK">LSK</ion-option>
+          <ion-option value="NEO">NEO</ion-option>
+          <ion-option value="NXT">NXT</ion-option>
+          <ion-option value="PPC">PPC</ion-option>
+          <ion-option value="STEEM">STEEM</ion-option>
+          <ion-option value="XEM">XEM</ion-option>
+          <ion-option value="XRP">XRP</ion-option>
+          <ion-option value="ADA">ADA</ion-option>
+          <ion-option value="WAVES">WAVES</ion-option>
+          <ion-option value="DGB">DGB</ion-option>
+          <ion-option value="DCR">DCR</ion-option>
+          <ion-option value="XVG">XVG</ion-option>
+          <ion-option value="COLX">COLX</ion-option>
+          <ion-option value="PIVX">PIVX</ion-option>
+          <ion-option value="XDN">XDN</ion-option>
+          <ion-option value="SC">SC</ion-option>
+          <ion-option value="ZEC">ZEC</ion-option>
+
+        </ion-select>
+      </ion-col>
+     </ion-row>
+    <ion-row>
+        <ion-col padding="">
+          <ion-item>
+            <ion-input type="number" placeholder="Amount" [(ngModel)]="coinValue"  (input)="onChangeCoin($event)"></ion-input>
+          </ion-item>
+        </ion-col>
+        
+    </ion-row>
+  </ion-card>
+  <div style="text-align: center">
+    <button ion-button color="bangbit">
+      <ion-label style="font-size: large;">&nbsp;&#8644;</ion-label>
+    </button>
+  </div>
+  <ion-card>
+    <ion-row >
+      <ion-col padding-left="">
+        <ion-label><div>Fiat Currency</div></ion-label>
+      </ion-col>
+      <ion-col padding-left="">
+        <ion-select [(ngModel)]="fiatCurrency" interface="popover" (click)="onClick()" (ionChange)="getCurrency()">
+          <ion-option *ngFor="let currencyIterator of myCurrency"  value="{{currencyIterator.symbol}}">{{currencyIterator.symbol}}</ion-option>
+        </ion-select>
+      </ion-col>
+      </ion-row>
+    <ion-row>
+      <ion-col padding="">
+        <ion-item>
+        <ion-input  type="number" placeholder="Amount" [(ngModel)]="fiatValue"  (input)="onChangeFiat($event)"></ion-input>
+      </ion-item>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+
+</ion-content >

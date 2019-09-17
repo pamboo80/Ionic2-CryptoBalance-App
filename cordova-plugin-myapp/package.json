@@ -1,0 +1,23 @@
+{
+  "name": "cordova-plugin-myapp",
+  "version": "0.0.1",
+  "description": "Plugin to access the Android native code. Available for Android ONLY..",
+  "cordova": {
+    "id": "cordova-plugin-myapp",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "phonegap"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "BangBit",
+  "license": "Apache 2.0"
+}

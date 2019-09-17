@@ -1,0 +1,34 @@
+<form [formGroup]="addAddressForm" (ngSubmit)="addWalletAddress()">
+  <ion-grid padding-top="1">
+    <ion-row>
+      <ion-col col-10="">
+      <ion-item style="margin-left:-0.6em;margin-right:0.6em;padding-right: 1em;">
+        <ion-input #walletAddressInput type="text" formControlName="walletAddress" name="walletAddress" id="walletAddress"
+                   [class.error]="!walletAddress.valid"
+                   placeholder="Wallet Address" required-warning="Wallet address is required" required [(ngModel)]="id"></ion-input>
+        <button ion-button clear item-right="" (click)="scanbarcode()" type="button" style="margin-right: -0.3em!important;">
+          <ion-icon is-active="false" item-right=""></ion-icon>
+          <div class="imageQR"></div>
+        </button>
+      </ion-item>
+      </ion-col>
+       <ion-col col-2="">
+         <button class="addButton" ion-button item-right="" type="submit" color="{{coinType}}">Add</button>
+       </ion-col>
+    </ion-row>
+  </ion-grid>
+</form>
+
+<div>
+  <hr/>
+</div>
+
+<div align="center"  style="margin-top:0.6em;margin-bottom:1.1em;">
+  <h6 style="font-weight: bold;margin-right:0.9em;">1 {{coinType}}&nbsp; ~ &nbsp;{{ (todayCoinValue=="0.0")? "" : todayCoinValue }}
+    <ion-col>      
+      <ion-select [(ngModel)]="currencyType" interface="popover" class="custom-ion-select" style="margin-left:-0.9em;" (ionChange)="getTodaysCoinValue()" >
+        <ion-option *ngFor="let currencyIterator of myCurrency"  value="{{currencyIterator.symbol}}">{{currencyIterator.symbol}}</ion-option>
+      </ion-select>
+    </ion-col>
+  </h6>
+</div>

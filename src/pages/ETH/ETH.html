@@ -1,0 +1,71 @@
+<ion-header no-border>
+  <ion-navbar color="bangbit">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-10="">
+          <!--<ion-title>About</ion-title>-->
+          <div class="title app-font">CryptoBalance</div>
+        </ion-col>
+        <ion-col col-2="">
+          <ion-buttons end="" (click)="presentPopover($event)">
+            <button icon-only style="background-color: transparent">
+              <ion-icon name="more" style="color: white; margin-top: 4px"></ion-icon>
+            </button>
+          </ion-buttons>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-navbar>
+  <my-app-toolbar #childComponentToolbar coin-type="ETH" (onAddWalletAddress)="addItemToAddressesArray($event)" (onCoinValueChange)="onChangeCoinValue($event)" (onCurrencyTypeChange)="onChangeCurrencyType($event)"></my-app-toolbar>
+</ion-header>
+
+<ion-content padding-bottom="1"> <!--style="overflow-y: hidden;"-->
+
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+      pullingIcon="arrow-dropdown"
+      pullingText="Pull To Refresh"
+      refreshingSpinner="circles">
+    </ion-refresher-content>
+  </ion-refresher>
+
+  <!--  <div style="margin-top:1.5em;"></div>-->
+  <!--<ion-scroll scrollY="true" style="width: 100%; height: 100%;">-->
+  <div *ngIf="myETHWallets.length>0">
+    <ion-list>
+      <ion-item-sliding *ngFor="let myETHWalletsiterator of myETHWallets; let i = index;">
+        <ion-item (click)="walletDetails(myETHWallets.indexOf(myETHWalletsiterator))" detail-push="" tappable>
+          <h6 style="font-weight: bold;text-overflow: ellipsis;overflow: hidden;">{{i+1}}. {{myETHWalletsiterator.address}}</h6>
+          <h6>Wallet Name : {{myETHWalletsiterator.walletName}}</h6>
+          <h6>Balance : {{(myETHWalletsiterator.balance ==0 )?"0.0": myETHWalletsiterator.balance }} </h6>
+          <h6>Value&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: {{currencySymbol}}{{  (myETHWalletsiterator.balance * todayCoinValue ==0 )?"0.0": myETHWalletsiterator.balance * todayCoinValue | customNumber}}</h6>
+          <h6 *ngIf="myETHWalletsiterator.myETHTokenDetails.length>0" align-items-end="">
+            <button ion-button outline color="bangbit" (click)="tokenDetails($event,myETHWallets.indexOf(myETHWalletsiterator))">{{myETHWalletsiterator.myETHTokenDetails.length}} Tokens ( ~ {{currencySymbol}}{{myETHWalletsiterator.tokenValue}} ) </button>
+          </h6>
+        </ion-item>
+        <ion-item-options side="right">
+          <button ion-button color="danger" (click)="deleteItemAtIndex(myETHWallets.indexOf(myETHWalletsiterator))">
+            <ion-icon name="trash"></ion-icon>
+            Delete
+          </button>
+        </ion-item-options>
+      </ion-item-sliding>
+    </ion-list>
+  </div>
+
+  <div *ngIf="myETHWallets.length==0">
+    <ion-item  no-lines="" text-center="">
+      <h6>No addresses added.</h6>
+    </ion-item>
+  </div>
+  <!--  </ion-scroll>-->
+  <!--<div style="margin-bottom:1.5em;"></div>-->
+
+</ion-content>
+
+<ion-footer no-border>
+  <hr style="margin-bottom:1px"/>
+  <ion-item  no-lines="" text-center="">
+    <h6 style="font-weight: bold">Total : {{totalBalance}} ETH ( ~ {{currencySymbol}}{{totalBalanceValue}} )</h6>
+  </ion-item>
+</ion-footer>

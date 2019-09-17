@@ -1,0 +1,45 @@
+page-settings {
+
+  
+  
+  
+  .login-button {
+    width: 100%;
+    border-radius: 4px;
+    font-size: 0.9em;
+    background-color: map-get($colors, bangbit)!important;
+    /*border: 1px solid #fff;*/
+    margin-top: 20px;
+    padding-left: 16px!important;
+  }
+
+  /*  ion-label
+    {
+      margin: 0!important;
+      padding-left: 8px;
+      padding-bottom: 10px;
+      color: #777777;
+    }
+    ion-row
+    {
+      padding-top:10px;
+    }
+
+    ion-checkbox{
+      padding-left:3px!important;
+    }
+
+  */
+
+  ion-item{
+    padding-left:3px!important;
+  }
+
+}
+
+.alert-md .alert-sub-title
+{
+  padding-top:10px;
+  text-align: justify;
+}
+
